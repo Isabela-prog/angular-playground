@@ -11,6 +11,7 @@
     <script src="src/Components/CardNews02.js" defer></script>
 </head>
 <body>
+    <!-- parte criada sem Angular -->
     <div class="container">
         <div class="card">
             <div class="card_left">
@@ -24,10 +25,19 @@
         </div>
     </div>
 
+    <!-- partes criadas com Angular -->
     <card-news></card-news>
 
     <titulo-dinamico titulo="Noticia Urgente"></titulo-dinamico>
     
-    <card-news2 autor="Isabela"></card-news2>
+    <!-- card feito de maneira dinâmica -->
+    <card-news2 
+        autor="Isabela"
+        title="Darth Vader Contrata Devs"
+        link-url="www.google.com"
+        photo="assets/asset-vader.png"
+        content="Darth Vader procura desenvolvedores que trabalham com components"
+    >
+    </card-news2>
 </body>
 </html>
